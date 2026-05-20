@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+/* 2. Apply the Font to the Body */
+body {
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.layout{
+    background-color: hsl(47, 88%, 63%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.card{
+    height: 480px;
+    width: 350px;
+    padding: 10px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid black;
+    box-shadow: 6px 6px;
+    border-radius: 20px;
+    gap: 23px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: start; */
+
+}
+
+
+
+.img-card img{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 18px;
+    width: 100%;
+    padding: 10px;
+}
+.img-card h3 {
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 6px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+    width: fit-content;
+   
+}
+.img-card p{
+    display: flex;
+    font-size:12px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+.info-card{
+padding-left:10px ;
+
+}
+.info-card h1{
+    color: hsl(0, 0%, 7%);
+    font-weight: 800;
+    white-space: nowrap;
+    font-size: 22px;
+
+}
+.info-card p{
+    color: hsl(0, 0%, 42%);
+    font-weight: 300;
+    font-size: 14px;
+    padding-top: 10px;
+}
+.profile-card{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    /* margin-top: 10px; */
+    gap: 12px;
+}
+.profile-card img{
+    margin-left: 10px;
+    width: 24px;
+    height:24px;
+}
+
+@media screen and (max-width:375px) {
+.layout{
+    display: flex;
+    padding: 20px ;
+}
+.card{
+    height: 420px;
+    width: 320px;
+    padding: 5px;
+    box-shadow: 4px 4px;
+    gap: 18px;
+
+}
+
+    
+}
